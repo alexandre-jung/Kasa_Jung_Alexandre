@@ -4,3 +4,11 @@
 @function get-color($color-name) {
   @return map.get($colors, $color-name);
 }
+
+@function get-font-size($fs) {
+  @return map.get($font-sizes, $fs);
+}
+
+@function get-font-weight($fw) {
+  @return map.get($font-weights, $fw);
+}

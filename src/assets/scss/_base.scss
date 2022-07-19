@@ -24,21 +24,21 @@ svg {
 
 @each $color-name, $color in $colors {
   .text-#{$color-name} {
-    color: $color;
+    color: $color !important;
   }
   .bg-#{$color-name} {
-    background-color: $color;
+    background-color: $color !important;
   }
 }
 
 @each $size-name, $size in $font-sizes {
   .fs-#{$size-name} {
-    font-size: $size;
+    font-size: $size !important;
   }
 }
 
 @each $fw-name, $fw in $font-weights {
   .fw-#{$fw-name} {
-    font-weight: $fw;
+    font-weight: $fw !important;
   }
 }

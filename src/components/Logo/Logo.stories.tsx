@@ -2,10 +2,6 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import LogoComponent from '@/components/Logo';
 
-// To import scss modules in stories resolves
-// the compile order issue in Storybook.
-import '@scss/main.scss';
-
 export default {
   title: 'Logo',
   component: LogoComponent,
@@ -21,5 +17,5 @@ const Template: ComponentStory<typeof LogoComponent> = (args) => (
 
 export const Logo = Template.bind({});
 Logo.args = {
-  className: 'text-white',
+  className: '',
 };
