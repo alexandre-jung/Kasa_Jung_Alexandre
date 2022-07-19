@@ -1,8 +1,8 @@
-@use '@scss/variables' as *;
-@use '@scss/functions' as *;
+@use "@scss/variables" as *;
+@use "@scss/functions" as *;
 
 .logo {
   height: $logo-height;
-  color: getColor('primary');
-  background-color: getColor('transparent');
+  color: get-color("primary");
+  background-color: get-color("transparent");
 }

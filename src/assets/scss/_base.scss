@@ -1,11 +1,11 @@
-@use 'variables';
+@use "variables" as *;
 
 *,
 ::before,
 ::after {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   font-weight: 500;
   box-sizing: border-box;
 }
@@ -19,10 +19,10 @@ body {
 }
 
 svg {
-  fill: currentColor;
+  fill: currentcolor;
 }
 
-@each $color-name, $color in variables.$colors {
+@each $color-name, $color in $colors {
   .text-#{$color-name} {
     color: $color;
   }
@@ -31,13 +31,13 @@ svg {
   }
 }
 
-@each $size-name, $size in variables.$font-sizes {
+@each $size-name, $size in $font-sizes {
   .fs-#{$size-name} {
     font-size: $size;
   }
 }
 
-@each $fw-name, $fw in variables.$font-weights {
+@each $fw-name, $fw in $font-weights {
   .fw-#{$fw-name} {
     font-weight: $fw;
   }

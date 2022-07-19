@@ -15,7 +15,9 @@ export default {
   },
 } as ComponentMeta<typeof LogoComponent>;
 
-const Template: ComponentStory<typeof LogoComponent> = (args) => <LogoComponent {...args} />;
+const Template: ComponentStory<typeof LogoComponent> = (args) => (
+  <LogoComponent {...args} />
+);
 
 export const Logo = Template.bind({});
 Logo.args = {
