@@ -1,0 +1,12 @@
+@use '@scss/variables' as *;
+@use '@scss/functions' as *;
+
+.footer {
+  color: get-color('white');
+  background-color: get-color('black');
+  padding: 65px 0 25px;
+}
+
+.logo {
+  margin-bottom: 10px;
+}

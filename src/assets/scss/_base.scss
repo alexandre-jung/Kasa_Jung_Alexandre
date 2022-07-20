@@ -42,3 +42,27 @@ svg {
     font-weight: $fw !important;
   }
 }
+
+.d-flex {
+  display: flex !important;
+}
+
+.flex-col {
+  flex-direction: column !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.list-unstyled {
+  list-style-type: none !important;
+}

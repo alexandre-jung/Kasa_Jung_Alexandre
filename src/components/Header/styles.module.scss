@@ -1,12 +1,11 @@
 @use '@scss/variables' as *;
 @use '@scss/functions' as *;
 
-.logo {
-  height: $logo-height;
+.header {
   color: get-color('primary');
   background-color: get-color('transparent');
+}
 
-  &[class~='small'] {
-    height: 40px;
-  }
+.menu :not(:first-child) {
+  margin-left: 50px;
 }
