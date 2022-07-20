@@ -1,14 +1,23 @@
-import Logo from '@/components/Logo';
+import { Navigate, Route, Routes } from 'react-router';
+import Layout from '@/Layout';
+import routes from '@/routes';
+import About from '@/routes/About';
+import Home from '@/routes/Home';
+import Lodge from '@/routes/Lodge';
+import NotFound from '@/routes/NotFound';
 
-function App() {
+const App = () => {
   return (
-    <>
-      <Logo />
-      <h1 className="fs-medium fw-medium text-gray-4">
-        Chez vous, partout et ailleurs
-      </h1>
-    </>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path={routes.home()} element={<Home />} />
+        <Route path={routes.about()} element={<About />} />
+        <Route path={routes.lodge()} element={<Lodge />} />
+        <Route path={routes.notFound()} element={<NotFound />} />
+        <Route path={'*'} element={<Navigate to={routes.notFound()} />} />
+      </Route>
+    </Routes>
   );
-}
+};
 
 export default App;

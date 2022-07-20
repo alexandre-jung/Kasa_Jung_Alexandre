@@ -1,4 +1,4 @@
-import Star from '../Star';
+import Star from '@/components/Star';
 import styles from './styles.module.scss';
 
 interface RatingProps {
