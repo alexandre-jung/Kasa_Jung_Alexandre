@@ -42,5 +42,5 @@
     "@typescript-eslint/no-non-null-assertion": "off",
     "react/react-in-jsx-scope": "off"
   },
-  "ignorePatterns": ["cypress/e2e/"]
+  "ignorePatterns": ["**/*.json"]
 }

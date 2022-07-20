@@ -1,0 +1,12 @@
+@use '@scss/variables' as *;
+@use '@scss/functions' as *;
+
+.link {
+  text-decoration: none;
+  color: get-color('primary');
+  border-bottom: 2px solid transparent;
+
+  &.underline:hover {
+    border-color: get-color('primary');
+  }
+}

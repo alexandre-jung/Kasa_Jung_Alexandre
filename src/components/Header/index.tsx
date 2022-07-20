@@ -1,5 +1,6 @@
 import routes from '@/routes';
 import NavLink from '@/components/NavLink';
+import Link from '@/components/Link';
 import Logo from '@/components/Logo';
 import styles from './styles.module.scss';
 
@@ -12,9 +13,9 @@ const Header = ({ className = '' }: HeaderProps) => {
     <div
       className={`${styles.header} d-flex justify-content-between align-items-center ${className}`}
     >
-      <NavLink to={routes.home()}>
+      <Link to={routes.home()}>
         <Logo className={styles.logo} />
-      </NavLink>
+      </Link>
       <ul className={`list-unstyled d-flex ${styles.menu}`}>
         <NavLink to={routes.home()}>Accueil</NavLink>
         <NavLink to={routes.about()}>A propos</NavLink>

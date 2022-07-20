@@ -1,14 +1,13 @@
 import { Navigate, useParams } from 'react-router';
 
 const Lodge = () => {
-  const params = useParams();
-  const id = parseInt(params.id ?? '', 10);
-  const isError = isNaN(id);
+  const { id } = useParams();
+  const isError = false;
 
   return isError ? (
     <Navigate to="/not-found" />
   ) : (
-    <div className="fs-large">Lodge {id}</div>
+    <div className="fs-large">Appartement {id}</div>
   );
 };
 
