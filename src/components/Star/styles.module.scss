@@ -1,0 +1,15 @@
+@use '@scss/variables' as *;
+@use '@scss/functions' as *;
+
+.star {
+  height: $star-height;
+  color: get-color('gray-2');
+
+  &[class~='active'] {
+    color: get-color('primary');
+  }
+
+  &[class~='small'] {
+    height: $star-height-small;
+  }
+}
