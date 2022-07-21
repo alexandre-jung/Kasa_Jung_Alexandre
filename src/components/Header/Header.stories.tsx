@@ -10,13 +10,7 @@ export default {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'padded',
   },
-  decorators: [
-    (Story) => (
-      <BrowserRouter>
-        <Story />
-      </BrowserRouter>
-    ),
-  ],
+  decorators: [(Story) => <BrowserRouter>{Story()}</BrowserRouter>],
 } as ComponentMeta<typeof HeaderComponent>;
 
 const Template: ComponentStory<typeof HeaderComponent> = (args) => (

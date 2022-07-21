@@ -7,7 +7,7 @@
     "build-storybook": "build-storybook -s public",
     "eject": "craco eject",
     "format": "npm run sort-scripts && npm run prettier:fix && npm run lint:fix && npm run lint-scss:fix",
-    "lint": "eslint \"{src,cypress}/**/*.{js,jsx,ts,tsx,html,json}\"",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx,html,json}\"",
     "lint-scss": "stylelint **/*.scss",
     "lint-scss:fix": "npm run lint-scss -- --fix",
     "lint:fix": "npm run lint -- --fix",

@@ -1,0 +1,39 @@
+@use '@scss/variables' as *;
+@use '@scss/functions' as *;
+
+.dropdown {
+  resize: horizontal;
+  overflow: hidden;
+}
+
+.toggle {
+  color: get-color('white');
+  background-color: get-color('primary');
+  border: none;
+  border-radius: $tag-corner-radius;
+  font-size: get-font-size('x-small');
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  height: 32px;
+  vertical-align: middle;
+  margin-left: 20px;
+  transform: rotate(-180deg);
+  transition: transform 150ms ease-in-out;
+
+  [class~='expanded'] & {
+    transform: rotate(0);
+  }
+}
+
+.content {
+  color: get-color('primary');
+  background-color: get-color('light');
+  border-radius: $tag-corner-radius;
+  padding: 25px 15px;
+}
