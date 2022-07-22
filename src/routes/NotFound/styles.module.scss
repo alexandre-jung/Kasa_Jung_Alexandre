@@ -1,0 +1,24 @@
+@use '@scss/variables' as *;
+@use '@scss/functions' as *;
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.jumbo {
+  line-height: 1;
+}
+
+.help-text {
+  color: get-color('primary');
+  font-size: get-font-size('medium');
+  margin-bottom: 150px;
+}

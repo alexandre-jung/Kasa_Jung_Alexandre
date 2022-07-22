@@ -1,15 +1,17 @@
 import Link from '@/components/Link';
 import lodges from '@/mock/logements.json';
-import routes from '.';
+import routes from '@/routes';
 
 const Home = () => {
   return (
     <div>
-      <h1 className="fs-large">Accueil</h1>
+      <div className="fs-large">Accueil</div>
       <ul className="list-unstyled">
         {lodges.map((lodge) => (
           <li key={lodge.id}>
-            <Link to={routes.lodge(lodge.id)} hover>Appartement {lodge.id}</Link>
+            <Link to={routes.lodge(lodge.id)} hover>
+              Appartement {lodge.id}
+            </Link>
           </li>
         ))}
       </ul>

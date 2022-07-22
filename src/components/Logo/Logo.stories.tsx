@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import LogoComponent from '@/components/Logo';
 
 export default {
-  title: 'Logo',
+  title: 'components/Logo',
   component: LogoComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

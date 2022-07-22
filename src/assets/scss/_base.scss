@@ -1,11 +1,11 @@
-@use "variables" as *;
+@use 'variables' as *;
 
 *,
 ::before,
 ::after {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   font-weight: 500;
   box-sizing: border-box;
   line-height: 1.5;
@@ -13,10 +13,20 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
   font-size: 1.6rem;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+main {
+  position: relative;
 }
 
 svg {
@@ -52,6 +62,10 @@ svg {
   flex-direction: column !important;
 }
 
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
 .justify-content-center {
   justify-content: center !important;
 }
@@ -72,4 +86,27 @@ svg {
 
 .no-decoration {
   text-decoration: none;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.mh-100 {
+  min-height: 100%;
+}
+
+.container {
+  // Mobile rules.
+  margin: 20px;
+
+  // desktop rules.
+  @media screen and (min-width: 800px) {
+    margin: 40px 100px;
+  }
+
+  // Remove margin on the following containers.
+  + .container {
+    margin-top: 0;
+  }
 }

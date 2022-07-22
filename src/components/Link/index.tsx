@@ -6,11 +6,15 @@ interface LinkProps {
   to: To;
   children: React.ReactNode;
   hover?: boolean;
+  className?: string;
 }
 
-const Link = ({ to, children, hover }: LinkProps) => {
+const Link = ({ to, children, hover, className }: LinkProps) => {
   return (
-    <RRLink to={to} className={`${styles.link} ${hover ? styles.underline : ''}`}>
+    <RRLink
+      to={to}
+      className={`${styles.link} ${hover ? styles.underline : ''} ${className}`}
+    >
       {children}
     </RRLink>
   );

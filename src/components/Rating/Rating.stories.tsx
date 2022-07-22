@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import RatingComponent from '@/components/Rating';
 
 export default {
-  title: 'Rating',
+  title: 'components/Rating',
   component: RatingComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

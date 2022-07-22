@@ -4,6 +4,11 @@
 .header {
   color: get-color('primary');
   background-color: get-color('transparent');
+  white-space: nowrap;
+}
+
+.logo {
+  margin-right: 50px;
 }
 
 .menu :not(:first-child) {

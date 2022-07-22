@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import FooterComponent from '@/components/Footer';
 
 export default {
-  title: 'Footer',
+  title: 'components/Footer',
   component: FooterComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import DropdownComponent from '@/components/Dropdown';
 
 export default {
-  title: 'Dropdown',
+  title: 'components/Dropdown',
   component: DropdownComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

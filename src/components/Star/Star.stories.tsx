@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import StarComponent from '@/components/Star';
 
 export default {
-  title: 'Star',
+  title: 'components/Star',
   component: StarComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

@@ -4,7 +4,7 @@ import HeaderComponent from '@/components/Header';
 import { BrowserRouter } from 'react-router-dom';
 
 export default {
-  title: 'Header',
+  title: 'components/Header',
   component: HeaderComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
