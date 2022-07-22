@@ -1,11 +1,15 @@
 @use '@scss/variables' as *;
 @use '@scss/functions' as *;
+@use '@scss/mixins' as *;
 
 .tag {
-  font-size: get-font-size('small');
-  font-weight: get-font-weight('medium');
   color: get-color('white');
   background-color: get-color('primary');
   border-radius: $tag-corner-radius;
   padding: 3.5px 22px;
+  @include fs('xxx-small');
+
+  @include breakpoint(desktop) {
+    @include fs('xx-small');
+  }
 }

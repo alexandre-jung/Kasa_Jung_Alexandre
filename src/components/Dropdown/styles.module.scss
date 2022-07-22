@@ -1,5 +1,6 @@
 @use '@scss/variables' as *;
 @use '@scss/functions' as *;
+@use '@scss/mixins' as *;
 
 .dropdown {
   resize: horizontal;
@@ -7,11 +8,12 @@
 }
 
 .toggle {
-  color: get-color('white');
-  background-color: get-color('primary');
-  border: none;
+  @include color('white');
+  @include bg(primary);
+  @include fs('x-small');
+
   border-radius: $tag-corner-radius;
-  font-size: get-font-size('x-small');
+  border: none;
   padding: 15px;
   width: 100%;
   display: flex;
@@ -33,7 +35,8 @@
 
 .content {
   color: get-color('primary');
-  background-color: get-color('light');
+  @include bg(light);
+
   border-radius: $tag-corner-radius;
   padding: 25px 15px;
 }

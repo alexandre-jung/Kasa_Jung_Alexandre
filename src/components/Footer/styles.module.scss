@@ -1,12 +1,23 @@
 @use '@scss/variables' as *;
 @use '@scss/functions' as *;
+@use '@scss/mixins' as *;
 
 .footer {
-  color: get-color('white');
-  background-color: get-color('black');
-  padding: 65px 0 25px;
+  @include color('white');
+  @include bg('black');
+
+  height: 210px;
+  padding: 58px 0 18px;
 }
 
 .logo {
   margin-bottom: 10px;
+}
+
+.copyright {
+  font-size: get-font-size('xxx-small');
+
+  @include breakpoint(desktop) {
+    font-size: get-font-size('small');
+  }
 }

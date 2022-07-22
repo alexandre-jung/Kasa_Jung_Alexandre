@@ -1,9 +1,11 @@
 @use '@scss/variables' as *;
 @use '@scss/functions' as *;
+@use '@scss/mixins' as *;
 
 .link {
+  @include color(primary);
+
   text-decoration: none;
-  color: get-color('primary');
   border-bottom: 2px solid transparent;
 
   &.underline:hover {

@@ -1,10 +1,11 @@
 @use '@scss/variables' as *;
 @use '@scss/functions' as *;
+@use '@scss/mixins' as *;
 
 .logo {
   height: $logo-height;
-  color: get-color('primary');
-  background-color: get-color('transparent');
+  @include color(primary);
+  @include bg('transparent');
 
   &[class~='small'] {
     height: 40px;

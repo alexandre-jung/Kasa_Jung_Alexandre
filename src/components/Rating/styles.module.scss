@@ -1,10 +1,11 @@
 @use '@scss/variables' as *;
 @use '@scss/functions' as *;
+@use '@scss/mixins' as *;
 
 .space {
-  margin-right: 10px;
-}
-
-.small-space {
   margin-right: 5px;
+
+  @include breakpoint(desktop) {
+    margin-right: 10px;
+  }
 }

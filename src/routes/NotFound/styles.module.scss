@@ -1,5 +1,6 @@
 @use '@scss/variables' as *;
 @use '@scss/functions' as *;
+@use '@scss/mixins' as *;
 
 .root {
   display: flex;
@@ -11,14 +12,34 @@
   left: 0;
   right: 0;
   bottom: 0;
+
+  // min-height: 500px;
+  flex: 1 0 600px;
 }
 
 .jumbo {
   line-height: 1;
+  font-size: get-font-size('jumbo-small');
+
+  @include breakpoint(desktop) {
+    font-size: get-font-size('jumbo');
+  }
 }
 
 .help-text {
   color: get-color('primary');
-  font-size: get-font-size('medium');
   margin-bottom: 150px;
+  font-size: get-font-size('x-small');
+
+  @include breakpoint(desktop) {
+    font-size: get-font-size('medium');
+  }
+}
+
+.link {
+  font-size: get-font-size('xx-small');
+
+  @include breakpoint(desktop) {
+    font-size: get-font-size('x-small');
+  }
 }

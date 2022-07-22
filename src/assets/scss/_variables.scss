@@ -1,4 +1,5 @@
 $logo-height: 68px;
+$logo-height-small: 47px;
 $tag-corner-radius: 10px;
 $star-height: 30px;
 $star-height-small: 15px;
@@ -16,14 +17,19 @@ $colors: (
 );
 $font-sizes: (
   'jumbo': 28.8rem,
+  'jumbo-small': 9.6rem,
   'large': 4.8rem,
   'medium': 3.6rem,
   'small': 2.4rem,
   'x-small': 1.8rem,
   'xx-small': 1.4rem,
+  'xxx-small': 1.2rem,
 );
 $font-weights: (
   'light': 400,
   'medium': 500,
   'bold': 700,
+);
+$breakpoints: (
+  'desktop': 800px,
 );

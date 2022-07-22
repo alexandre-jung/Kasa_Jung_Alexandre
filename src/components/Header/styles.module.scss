@@ -1,16 +1,23 @@
 @use '@scss/variables' as *;
 @use '@scss/functions' as *;
+@use '@scss/mixins' as *;
 
 .header {
-  color: get-color('primary');
-  background-color: get-color('transparent');
   white-space: nowrap;
 }
 
 .logo {
-  margin-right: 50px;
+  height: $logo-height-small;
+  @include breakpoint(desktop) {
+    height: $logo-height;
+  }
 }
 
-.menu :not(:first-child) {
-  margin-left: 50px;
+.menu a {
+  margin-left: 25px;
+  @include fs('xxx-small');
+  @include breakpoint(desktop) {
+    margin-left: 50px;
+    @include fs('small');
+  }
 }

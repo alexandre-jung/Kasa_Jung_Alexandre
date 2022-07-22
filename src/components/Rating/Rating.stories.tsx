@@ -21,5 +21,4 @@ Rating.args = {
   className: '',
   starClassName: '',
   activeStarClassName: '',
-  small: false,
 };

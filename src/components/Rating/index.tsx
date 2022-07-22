@@ -7,7 +7,6 @@ interface RatingProps {
   as?: React.ElementType;
   starClassName?: string;
   activeStarClassName?: string;
-  small?: boolean;
 }
 
 const Rating = ({
@@ -16,7 +15,6 @@ const Rating = ({
   as: Component = 'div',
   starClassName = '',
   activeStarClassName = '',
-  small,
 }: RatingProps) => (
   <Component className={className}>
     {[...Array(5).keys()].map((i) => (
@@ -24,9 +22,8 @@ const Rating = ({
         key={i}
         active={i < rating}
         className={`${i < rating ? activeStarClassName : starClassName} ${
-          i < 5 ? (small ? styles['small-space'] : styles.space) : ''
+          i < 5 ? styles.space : ''
         }`}
-        small={small}
       />
     ))}
   </Component>

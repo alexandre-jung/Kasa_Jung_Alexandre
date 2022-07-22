@@ -4,14 +4,11 @@ import styles from './styles.module.scss';
 interface StarProps {
   active?: boolean;
   className?: string;
-  small?: boolean;
 }
 
-const Star = ({ active, className = '', small }: StarProps) => (
+const Star = ({ active, className = '' }: StarProps) => (
   <StarSvg
-    className={`${styles.star} ${className} ${active ? 'active' : ''} ${
-      small ? 'small' : ''
-    }`}
+    className={`${styles.star} ${className} ${active ? 'active' : ''}`}
   />
 );
 

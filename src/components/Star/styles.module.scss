@@ -1,15 +1,20 @@
 @use '@scss/variables' as *;
 @use '@scss/functions' as *;
+@use '@scss/mixins' as *;
 
 .star {
-  height: $star-height;
-  color: get-color('gray-2');
-
-  &[class~='active'] {
-    color: get-color('primary');
-  }
+  @include color('gray-2');
 
   &[class~='small'] {
     height: $star-height-small;
+  }
+
+  height: $star-height-small;
+  @include breakpoint(desktop) {
+    height: $star-height;
+  }
+
+  &[class~='active'] {
+    @include color(primary);
   }
 }

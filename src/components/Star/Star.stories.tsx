@@ -19,5 +19,4 @@ export const Star = Template.bind({});
 Star.args = {
   active: true,
   className: '',
-  small: false,
 };
