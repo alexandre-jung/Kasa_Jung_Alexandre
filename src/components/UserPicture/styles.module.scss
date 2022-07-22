@@ -1,0 +1,24 @@
+@use '@scss/variables' as *;
+@use '@scss/functions' as *;
+@use '@scss/mixins' as *;
+
+.user-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  @include bg('gray-3');
+  @include fs('xxx-small');
+
+  white-space: wrap;
+  background-size: contain;
+  display: inline-block;
+
+  @include breakpoint(desktop) {
+    width: 64px;
+    height: 64px;
+  }
+
+  &[class~='error'] {
+    background: none;
+  }
+}
