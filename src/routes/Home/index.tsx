@@ -1,3 +1,4 @@
+import Grid from '@/components/Grid';
 import Hero from '@/components/Hero';
 import Link from '@/components/Link';
 import lodges from '@/mock/logements.json';
@@ -15,15 +16,15 @@ const Home = () => {
     <div>
       <Hero background="coast" heading={heading} compact />
       <div className="fs-large">Accueil</div>
-      <ul className="list-unstyled">
+      <Grid>
         {lodges.map((lodge) => (
-          <li key={lodge.id}>
+          <div key={lodge.id} style={{ backgroundColor: 'saddlebrown' }}>
             <Link to={routes.lodge(lodge.id)} hover>
               Appartement {lodge.id}
             </Link>
-          </li>
+          </div>
         ))}
-      </ul>
+      </Grid>
     </div>
   );
 };
