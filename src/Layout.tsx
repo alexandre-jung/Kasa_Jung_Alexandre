@@ -4,12 +4,16 @@ import Footer from '@/components/Footer';
 
 const Layout = () => {
   return (
-    <div className='d-flex flex-col mh-100'>
-      <Header className='container' />
-      <main className='container flex-grow-1'>
+    <div className="d-flex flex-col mh-100 align-items-center">
+      <div className="container">
+        <Header />
+      </div>
+      <main className="container flex-grow-1">
         <Outlet />
       </main>
-      <Footer />
+      <div style={{ alignSelf: 'stretch' }}>
+        <Footer />
+      </div>
     </div>
   );
 };
