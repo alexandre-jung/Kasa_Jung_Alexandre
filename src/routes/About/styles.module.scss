@@ -1,0 +1,13 @@
+.container > * + * {
+  margin-top: 50px;
+}
+
+.container-compact {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+
+  > * + * {
+    margin-top: 30px;
+  }
+}

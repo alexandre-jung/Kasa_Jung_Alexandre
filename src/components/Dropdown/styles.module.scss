@@ -2,11 +2,6 @@
 @use '@scss/functions' as *;
 @use '@scss/mixins' as *;
 
-.dropdown {
-  resize: horizontal;
-  overflow: hidden;
-}
-
 .toggle {
   @include color('white');
   @include bg(primary);
