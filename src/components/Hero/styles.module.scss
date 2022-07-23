@@ -8,7 +8,7 @@
   align-items: center;
   width: 100%;
   height: 225px;
-  border-radius: 25px;
+  border-radius: 10px;
 
   &[class~='compact'] {
     height: 110px;
@@ -25,6 +25,7 @@
   @include breakpoint(desktop) {
     @include fs('large');
 
+    border-radius: 25px;
     height: 225px !important;
   }
 }

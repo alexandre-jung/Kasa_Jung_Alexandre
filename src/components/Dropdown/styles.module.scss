@@ -5,7 +5,11 @@
 .toggle {
   @include color('white');
   @include bg(primary);
-  @include fs('x-small');
+  @include fs('xx-small');
+
+  @include breakpoint(desktop) {
+    @include fs('x-small');
+  }
 
   border-radius: $tag-corner-radius;
   border: none;
@@ -29,9 +33,13 @@
 }
 
 .content {
-  color: get-color('primary');
   @include bg(light);
+  @include fs('xxx-small');
+  @include breakpoint(desktop) {
+    @include fs('x-small');
+  }
 
+  color: get-color('primary');
   border-radius: $tag-corner-radius;
   padding: 25px 15px;
 }
