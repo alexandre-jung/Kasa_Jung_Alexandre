@@ -1,8 +1,10 @@
 import Grid from '@/components/Grid';
 import Hero from '@/components/Hero';
 import Link from '@/components/Link';
+import Thumbnail from '@/components/Thumbnail';
 import lodges from '@/mock/logements.json';
 import routes from '@/routes';
+import styles from './styles.module.scss';
 
 const heading = (
   <span className="no-break">
@@ -15,14 +17,15 @@ const Home = () => {
   return (
     <div>
       <Hero background="coast" heading={heading} compact />
-      <div className="fs-large">Accueil</div>
-      <Grid>
+      <Grid className={styles.grid}>
         {lodges.map((lodge) => (
-          <div key={lodge.id} style={{ backgroundColor: 'saddlebrown' }}>
-            <Link to={routes.lodge(lodge.id)} hover>
-              Appartement {lodge.id}
-            </Link>
-          </div>
+          <Link
+            to={routes.lodge(lodge.id)}
+            key={lodge.id}
+            className={styles.link}
+          >
+            <Thumbnail cover={lodge.cover} title={lodge.title} height="100%" />
+          </Link>
         ))}
       </Grid>
     </div>
