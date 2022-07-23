@@ -7,11 +7,13 @@
   display: grid;
   padding: 0;
   grid-template-columns: repeat(auto-fill, 100%);
-  grid-gap: 20px;
+  row-gap: 20px;
+  column-gap: 0;
 
   @include breakpoint(desktop) {
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     padding: 50px;
+    gap: 40px;
   }
 
   > * {
@@ -21,8 +23,8 @@
 
     @include breakpoint(desktop) {
       & {
-        width: 340px;
-        height: 340px;
+        width: 320px;
+        height: 320px;
       }
     }
   }

@@ -1,0 +1,38 @@
+@use '@scss/variables' as *;
+@use '@scss/functions' as *;
+@use '@scss/mixins' as *;
+
+.thumbnail {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  background-color: black;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: linear-gradient(rgb(255 255 255 / 0%), rgb(255 255 255 / 0%) 40%, rgb(0 0 0 / 70%));
+  }
+}
+
+.title {
+  @include color('white');
+  @include fs('x-small');
+
+  margin: 0 80px 15px 15px !important;
+  padding: 0 !important;
+  margin-top: auto !important;
+  max-width: 50%;
+  line-height: 1.3;
+  display: inline-block;
+  vertical-align: bottom;
+  z-index: 0;
+}

@@ -1,6 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-
 import GridComponent from '@/components/Grid';
+import Thumbnail from '@/components/Thumbnail';
+import lodges from '@/mock/logements.json';
 
 export default {
   title: 'components/Grid',
@@ -29,12 +30,9 @@ export const Grid = Template.bind({});
 Grid.args = {
   children: (
     <>
-      <div style={{ background: 'salmon' }}></div>
-      <div style={{ background: 'salmon' }}></div>
-      <div style={{ background: 'salmon' }}></div>
-      <div style={{ background: 'salmon' }}></div>
-      <div style={{ background: 'salmon' }}></div>
-      <div style={{ background: 'salmon' }}></div>
+      {lodges.map((lodge) => (
+        <Thumbnail cover={lodge.cover} title={lodge.title} key={lodge.id} />
+      ))}
     </>
   ),
 };
