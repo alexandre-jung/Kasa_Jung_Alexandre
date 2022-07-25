@@ -1,0 +1,40 @@
+@use '@scss/variables' as *;
+@use '@scss/functions' as *;
+@use '@scss/mixins' as *;
+
+.controls {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgb(0 0 0 / 50%) 0%, rgb(0 0 0 / 0%) 20%, rgb(0 0 0 / 0%) 80%, rgb(0 0 0 / 40%) 100%);
+
+  // Debug
+  // background-color: lightgray;
+}
+
+.button {
+  padding: 20px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  z-index: 1;
+}
+
+.play-pause-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.icon {
+  height: 24px;
+  @include breakpoint(desktop) {
+    height: 80px;
+
+    &[class~='small'] {
+      height: 40px;
+    }
+  }
+}
