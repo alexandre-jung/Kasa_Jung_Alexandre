@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { CarrouselControls } from '../CarrouselControls/CarrouselControls.stories';
+import CarrouselControls from '@components/CarrouselControls';
 import styles from './styles.module.scss';
 
 interface CarrouselProps {

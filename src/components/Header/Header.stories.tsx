@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import HeaderComponent from '@/components/Header';
+import HeaderComponent from '@components/Header';
 import { BrowserRouter } from 'react-router-dom';
 
 export default {

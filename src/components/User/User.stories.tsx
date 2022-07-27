@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import UserComponent from '@/components/User';
+import UserComponent from '@components/User';
 
 export default {
   title: 'components/User',

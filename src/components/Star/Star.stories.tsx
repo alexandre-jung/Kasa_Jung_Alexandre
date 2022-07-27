@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import StarComponent from '@/components/Star';
+import StarComponent from '@components/Star';
 
 export default {
   title: 'components/Star',

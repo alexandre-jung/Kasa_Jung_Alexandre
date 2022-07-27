@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import ThumbnailComponent from '@/components/Thumbnail';
+import ThumbnailComponent from '@components/Thumbnail';
 
 export default {
   title: 'components/Thumbnail',

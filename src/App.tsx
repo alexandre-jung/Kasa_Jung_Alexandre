@@ -1,10 +1,10 @@
 import { Navigate, Route, Routes } from 'react-router';
 import Layout from '@/Layout';
 import routes from '@/routes';
-import About from '@/routes/About';
-import Home from '@/routes/Home';
-import Lodge from '@/routes/Lodge';
-import NotFound from '@/routes/NotFound';
+import About from '@routes/About';
+import Home from '@routes/Home';
+import Lodge from '@routes/Lodge';
+import NotFound from '@routes/NotFound';
 
 const App = () => {
   return (

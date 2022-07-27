@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import AboutComponent from '@/routes/About';
+import AboutComponent from '@routes/About';
 import { BrowserRouter } from 'react-router-dom';
 
 export default {

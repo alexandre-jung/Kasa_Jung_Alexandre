@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import NotFoundComponent from '@/routes/NotFound';
+import NotFoundComponent from '@routes/NotFound';
 import { BrowserRouter } from 'react-router-dom';
 
 export default {

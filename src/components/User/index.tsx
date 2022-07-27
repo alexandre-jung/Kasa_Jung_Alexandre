@@ -1,4 +1,4 @@
-import UserPicture from '../UserPicture';
+import UserPicture from '@components/UserPicture';
 import styles from './styles.module.scss';
 
 interface UserProps {

@@ -1,4 +1,4 @@
-import { LeftArrow, RightArrow, Play, Pause } from '@/components/Icons';
+import { LeftArrow, RightArrow, Play, Pause } from '@components/Icons';
 import styles from './styles.module.scss';
 
 interface ControlsProps {

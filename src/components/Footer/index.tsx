@@ -1,4 +1,4 @@
-import Logo from '@/components/Logo';
+import Logo from '@components/Logo';
 import styles from './styles.module.scss';
 
 interface FooterProps {

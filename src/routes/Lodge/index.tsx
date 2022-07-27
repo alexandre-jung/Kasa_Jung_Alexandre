@@ -1,5 +1,5 @@
 import { Navigate, useParams } from 'react-router';
-import lodges from '@/mock/logements.json';
+import lodges from '@mock/logements.json';
 
 const Lodge = () => {
   const { id } = useParams();

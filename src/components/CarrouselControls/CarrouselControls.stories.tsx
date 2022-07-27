@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import CarrouselControlsComponent from '@/components/CarrouselControls';
+import CarrouselControlsComponent from '@components/CarrouselControls';
 
 export default {
   title: 'components/CarrouselControls',

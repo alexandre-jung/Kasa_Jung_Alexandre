@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import UserPictureComponent from '@/components/UserPicture';
+import UserPictureComponent from '@components/UserPicture';
 
 export default {
   title: 'components/UserPicture',

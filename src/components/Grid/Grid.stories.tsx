@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import GridComponent from '@/components/Grid';
-import Thumbnail from '@/components/Thumbnail';
-import lodges from '@/mock/logements.json';
+import GridComponent from '@components/Grid';
+import Thumbnail from '@components/Thumbnail';
+import lodges from '@mock/logements.json';
 
 export default {
   title: 'components/Grid',

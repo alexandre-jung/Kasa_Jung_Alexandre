@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import HomeComponent from '@/routes/Home';
+import HomeComponent from '@routes/Home';
 import { BrowserRouter } from 'react-router-dom';
 
 export default {

@@ -1,7 +1,7 @@
 import routes from '@/routes';
-import NavLink from '@/components/NavLink';
-import Link from '@/components/Link';
-import Logo from '@/components/Logo';
+import NavLink from '@components/NavLink';
+import Link from '@components/Link';
+import Logo from '@components/Logo';
 import styles from './styles.module.scss';
 
 interface HeaderProps {

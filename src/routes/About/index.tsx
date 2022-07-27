@@ -1,5 +1,5 @@
-import Dropdown from '@/components/Dropdown';
-import Hero from '@/components/Hero';
+import Dropdown from '@components/Dropdown';
+import Hero from '@components/Hero';
 import styles from './styles.module.scss';
 
 const About = () => {

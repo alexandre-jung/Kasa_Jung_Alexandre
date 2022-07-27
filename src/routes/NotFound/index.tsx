@@ -1,4 +1,4 @@
-import Link from '@/components/Link';
+import Link from '@components/Link';
 import routes from '@/routes';
 import styles from './styles.module.scss';
 

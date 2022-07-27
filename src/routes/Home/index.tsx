@@ -1,8 +1,8 @@
-import Grid from '@/components/Grid';
-import Hero from '@/components/Hero';
-import Link from '@/components/Link';
-import Thumbnail from '@/components/Thumbnail';
-import lodges from '@/mock/logements.json';
+import Grid from '@components/Grid';
+import Hero from '@components/Hero';
+import Link from '@components/Link';
+import Thumbnail from '@components/Thumbnail';
+import lodges from '@mock/logements.json';
 import routes from '@/routes';
 import styles from './styles.module.scss';
 
