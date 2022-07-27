@@ -1,0 +1,31 @@
+@use '@scss/variables' as *;
+@use '@scss/functions' as *;
+@use '@scss/mixins' as *;
+
+.user {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @include fs('xxx-small');
+
+  > * + * {
+    margin-left: 15px;
+  }
+
+  @include breakpoint(desktop) {
+    @include fs('x-small');
+  }
+}
+
+.username {
+  @include color('primary');
+
+  margin: 0;
+  flex: 0 1 10em;
+  text-align: end;
+}
+
+.picture {
+  flex: 0 0 auto;
+}
