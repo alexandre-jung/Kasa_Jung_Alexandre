@@ -22,7 +22,7 @@ const Rating = ({
         key={i}
         active={i < rating}
         className={`${i < rating ? activeStarClassName : starClassName} ${
-          i < 5 ? styles.space : ''
+          i < 4 ? styles.space : ''
         }`}
       />
     ))}

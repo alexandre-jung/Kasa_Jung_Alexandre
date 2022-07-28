@@ -17,10 +17,7 @@ const Dropdown = ({
   const toggle = () => setExpanded((previous) => !previous);
 
   return (
-    <div
-      className={`${styles.dropdown} ${expanded ? 'expanded' : ''}`}
-      {...otherProps}
-    >
+    <div className={expanded ? 'expanded' : ''} {...otherProps}>
       <button className={styles.toggle} onClick={toggle}>
         <span className={labelClassName}>{label}</span>
         <SvgArrowUp className={styles.arrow} />

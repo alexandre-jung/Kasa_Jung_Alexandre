@@ -1,0 +1,33 @@
+@use '@scss/variables' as *;
+@use '@scss/functions' as *;
+@use '@scss/mixins' as *;
+
+.container {
+  margin-top: 50px;
+
+  .container {
+    margin-top: 30px;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    flex: 1 1 50%;
+
+    + * {
+      margin-top: 20px;
+    }
+  }
+
+  @include breakpoint(desktop) {
+    flex-direction: row;
+
+    > * + * {
+      margin-left: 50px;
+      margin-top: 0;
+    }
+  }
+}

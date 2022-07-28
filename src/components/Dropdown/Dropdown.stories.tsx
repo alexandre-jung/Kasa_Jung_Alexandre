@@ -38,6 +38,6 @@ const Template: ComponentStory<typeof DropdownComponent> = (args) => (
 
 export const Dropdown = Template.bind({});
 Dropdown.args = {
-  label: 'Equipements',
+  label: 'Équipements',
   labelClassName: ''
 };

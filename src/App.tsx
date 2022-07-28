@@ -3,7 +3,7 @@ import Layout from '@/Layout';
 import routes from '@/routes';
 import About from '@routes/About';
 import Home from '@routes/Home';
-import Lodge from '@routes/Lodge';
+import Detail from '@routes/Detail';
 import NotFound from '@routes/NotFound';
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
       <Route element={<Layout />}>
         <Route path={routes.home()} element={<Home />} />
         <Route path={routes.about()} element={<About />} />
-        <Route path={routes.lodge()} element={<Lodge />} />
+        <Route path={routes.lodge()} element={<Detail />} />
         <Route path={routes.notFound()} element={<NotFound />} />
         <Route path={'*'} element={<Navigate to={routes.notFound()} />} />
       </Route>

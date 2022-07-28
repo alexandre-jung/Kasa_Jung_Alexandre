@@ -101,13 +101,21 @@ const Carrousel = ({
 
   return (
     <div className={styles.carrousel} style={animationStyleVariable}>
-      {renderFrames()}
-      <CarrouselControls
-        isPlaying={autoplay}
-        onPrevious={handlePrevious}
-        onNext={handleNext}
-        onPlayPause={autoplay ? pauseAutoplay : resumeAutoplay}
-      />
+      {React.Children.count(children) === 1 ? (
+        <div className={`${styles.frame}`}>
+          {React.Children.toArray(children)[0]}
+        </div>
+      ) : (
+        <>
+          {renderFrames()}
+          <CarrouselControls
+            isPlaying={autoplay}
+            onPrevious={handlePrevious}
+            onNext={handleNext}
+            onPlayPause={autoplay ? pauseAutoplay : resumeAutoplay}
+          />
+        </>
+      )}
     </div>
   );
 };

@@ -35,7 +35,7 @@ DetailHeader.args = {
   title: mock[1].title,
   location: mock[1].location,
   tags: mock[1].tags,
-  username: mock[1].host.name && 'Alexandre Jung',
+  username: mock[1].host.name && 'Della Case',
   userPicture: mock[1].host.picture,
   rating: parseInt(mock[1].rating, 10),
   className: '',
