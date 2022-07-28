@@ -1,10 +1,10 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import NotFoundComponent from '@routes/NotFound';
+import NotFoundComponent from '@views/NotFound';
 import { BrowserRouter } from 'react-router-dom';
 
 export default {
-  title: 'routes/NotFound',
+  title: 'views/NotFound',
   component: NotFoundComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

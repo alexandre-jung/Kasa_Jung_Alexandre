@@ -1,20 +1,20 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import AboutComponent from '@routes/About';
+import HomeComponent from '@views/Home';
 import { BrowserRouter } from 'react-router-dom';
 
 export default {
-  title: 'routes/About',
-  component: AboutComponent,
+  title: 'views/Home',
+  component: HomeComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'padded',
   },
   decorators: [(Story) => <BrowserRouter>{Story()}</BrowserRouter>],
-} as ComponentMeta<typeof AboutComponent>;
+} as ComponentMeta<typeof HomeComponent>;
 
-const Template: ComponentStory<typeof AboutComponent> = () => (
-  <AboutComponent />
+const Template: ComponentStory<typeof HomeComponent> = () => (
+  <HomeComponent />
 );
 
-export const About = Template.bind({});
+export const Home = Template.bind({});

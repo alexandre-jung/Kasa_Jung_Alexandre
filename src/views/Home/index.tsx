@@ -3,7 +3,7 @@ import Hero from '@components/Hero';
 import Link from '@components/Link';
 import Thumbnail from '@components/Thumbnail';
 import lodges from '@mock/logements.json';
-import routes from '@/routes';
+import routes from '@routes';
 import styles from './styles.module.scss';
 
 const heading = (

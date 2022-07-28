@@ -1,11 +1,11 @@
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import DetailComponent from '@routes/Detail';
-import routes from '..';
+import DetailComponent from '@views/Detail';
+import routes from '@routes';
 
 export default {
-  title: 'routes/Detail',
+  title: 'views/Detail',
   component: DetailComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

@@ -1,5 +1,5 @@
 import Link from '@components/Link';
-import routes from '@/routes';
+import routes from '@routes';
 import styles from './styles.module.scss';
 
 const NotFound = () => {

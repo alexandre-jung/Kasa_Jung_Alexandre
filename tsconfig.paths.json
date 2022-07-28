@@ -7,7 +7,8 @@
       "@img/*": ["src/assets/img/*"],
       "@scss/*": ["src/assets/scss/*"],
       "@components/*": ["src/components/*"],
-      "@routes/*": ["src/routes/*"],
+      "@routes": ["src/routes"],
+      "@views/*": ["src/views/*"],
       "@mock/*": ["src/mock/*"]
     }
   }
