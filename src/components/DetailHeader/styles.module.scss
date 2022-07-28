@@ -1,0 +1,78 @@
+@use '@scss/variables' as *;
+@use '@scss/functions' as *;
+@use '@scss/mixins' as *;
+
+.detail-header {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    'title title'
+    'location location'
+    'tags tags'
+    'rating host';
+
+  @include breakpoint(desktop) {
+    grid-template-areas:
+      'title host'
+      'location host'
+      'tags rating';
+  }
+
+  > * {
+    margin: 0;
+  }
+}
+
+.title {
+  grid-area: title;
+  line-height: 1.3;
+  @include color('primary');
+  @include fs('x-small');
+
+  @include breakpoint(desktop) {
+    @include fs('medium');
+  }
+}
+
+.location {
+  grid-area: location;
+  @include color('primary');
+  @include fs('xx-small');
+
+  @include breakpoint(desktop) {
+    @include fs('x-small');
+  }
+}
+
+.tags {
+  grid-area: tags;
+  margin: 0 -5px -5px;
+
+  @include breakpoint(desktop) {
+    margin-top: 10px;
+    @include fs('x-small');
+  }
+}
+
+.host {
+  grid-area: host;
+  margin-top: 10px;
+
+  @include breakpoint(desktop) {
+    margin-top: 0;
+    @include fs('x-small');
+  }
+}
+
+.rating {
+  grid-area: rating;
+  margin-top: 10px;
+  text-align: end;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  @include breakpoint(desktop) {
+    justify-content: end;
+  }
+}

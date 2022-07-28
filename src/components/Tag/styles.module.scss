@@ -9,7 +9,7 @@
   padding: 3.5px 22px;
   display: inline-block;
   white-space: nowrap;
-  @include fs('xxx-small');
+  @include fs('micro');
 
   @include breakpoint(desktop) {
     @include fs('xx-small');
