@@ -1,4 +1,4 @@
-import { Tag } from '../Tag/Tag.stories';
+import { Tag } from '@components/Tag/Tag.stories';
 import styles from './styles.module.scss';
 
 interface TagListProps {

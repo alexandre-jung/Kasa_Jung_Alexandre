@@ -75,7 +75,7 @@ const Carrousel = ({
     } else if (frameIndex === currentFrameIndex + 1) {
       return styles.next;
     } else if (frameIndex === currentFrameIndex) {
-      return styles.current;
+      return '';
     } else {
       return styles.hidden;
     }

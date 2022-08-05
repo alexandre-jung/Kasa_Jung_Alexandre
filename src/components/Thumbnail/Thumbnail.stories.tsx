@@ -1,5 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import ThumbnailComponent from '@components/Thumbnail';
+import { resizeDecorator, titleDecorator } from '@storybook/utils';
 
 export default {
   title: 'components/Thumbnail',
@@ -9,23 +10,8 @@ export default {
     layout: 'padded',
   },
   decorators: [
-    (Story) => (
-      <>
-        <h4 className="text-gray-4">
-          Resize the container to change the thumbnail size
-        </h4>
-        <div
-          style={{
-            resize: 'both',
-            overflow: 'hidden',
-            width: '400px',
-            height: '300px',
-          }}
-        >
-          {Story()}
-        </div>
-      </>
-    ),
+    resizeDecorator({ width: 400, height: 300 }),
+    titleDecorator('Resize the container to change the thumbnail size'),
   ],
 } as ComponentMeta<typeof ThumbnailComponent>;
 

@@ -2,6 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import DetailHeaderComponent from '@components/DetailHeader';
 import mock from '@mock/logements.json';
+import { resizeDecorator } from '@storybook/utils';
 
 export default {
   title: 'layout/DetailHeader',
@@ -10,20 +11,7 @@ export default {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'padded',
   },
-  decorators: [
-    (story) => (
-      <div
-        style={{
-          width: 1000,
-          maxWidth: '100%',
-          resize: 'both',
-          overflow: 'hidden',
-        }}
-      >
-        {story()}
-      </div>
-    ),
-  ],
+  decorators: [resizeDecorator({ width: 1000, resize: 'horizontal' })],
 } as ComponentMeta<typeof DetailHeaderComponent>;
 
 const Template: ComponentStory<typeof DetailHeaderComponent> = (args) => (

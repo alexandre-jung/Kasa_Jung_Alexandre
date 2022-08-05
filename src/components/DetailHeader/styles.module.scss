@@ -69,7 +69,7 @@
   margin-top: 10px;
   text-align: end;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 
   @include breakpoint(desktop) {

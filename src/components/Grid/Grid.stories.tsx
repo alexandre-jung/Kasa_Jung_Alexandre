@@ -2,6 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import GridComponent from '@components/Grid';
 import Thumbnail from '@components/Thumbnail';
 import lodges from '@mock/logements.json';
+import { titleDecorator } from '@storybook/utils';
 
 export default {
   title: 'components/Grid',
@@ -10,16 +11,7 @@ export default {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'padded',
   },
-  decorators: [
-    (Story) => (
-      <>
-        <h4 className="text-gray-4">
-          Resize your window to view the grid behavior
-        </h4>
-        {Story()}
-      </>
-    ),
-  ],
+  decorators: [titleDecorator('Resize your window to view the grid behavior')],
 } as ComponentMeta<typeof GridComponent>;
 
 const Template: ComponentStory<typeof GridComponent> = (args) => (

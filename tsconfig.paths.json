@@ -2,6 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@storybook/*": [".storybook/*"],
       "@/*": ["src/*"],
       "@assets/*": ["src/assets/*"],
       "@img/*": ["src/assets/img/*"],

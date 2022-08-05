@@ -1,0 +1,30 @@
+@use '@scss/variables' as *;
+@use '@scss/functions' as *;
+@use '@scss/mixins' as *;
+
+.image-error {
+  @include bg('light');
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.broken-robot {
+  width: 100px;
+}
+
+.broken-robot,
+.error-message {
+  @include color('primary');
+
+  text-align: center;
+}
+
+.error-message {
+  margin-top: 5px;
+}

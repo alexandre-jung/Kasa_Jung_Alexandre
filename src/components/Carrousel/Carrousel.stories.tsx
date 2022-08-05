@@ -1,6 +1,8 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import CarrouselComponent from '@components/Carrousel';
+import { resizeDecorator } from '@storybook/utils';
+import Image from '../Image';
 
 export default {
   title: 'components/Carrousel',
@@ -18,18 +20,7 @@ export default {
     },
   },
   decorators: [
-    (story) => (
-      <div
-        style={{
-          width: 600,
-          height: 415,
-          resize: 'horizontal',
-          overflow: 'hidden',
-        }}
-      >
-        {story()}
-      </div>
-    ),
+    resizeDecorator({ width: 600, height: 415, resize: 'horizontal' }),
   ],
 } as ComponentMeta<typeof CarrouselComponent>;
 
@@ -43,6 +34,7 @@ const imageSources = [
   'https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg',
   'https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg',
   'https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg',
+  'this-image-does-not-exist',
 ];
 
 export const Carrousel = Template.bind({});
@@ -51,13 +43,12 @@ Carrousel.args = {
   autoplayInterval: 5000,
   animationSpeed: 500,
   children: imageSources.map((imageSource) => (
-    <img
+    <Image
+      className="h-100"
       src={imageSource}
       alt={imageSource}
       key={imageSource}
-      width="100%"
-      height="100%"
-      style={{ objectFit: 'cover' }}
+      errorStyle={{ padding: '0 90px' }}
     />
   )),
 };
