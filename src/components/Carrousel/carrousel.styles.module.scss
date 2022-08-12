@@ -25,12 +25,12 @@
   top: 0;
   right: 0;
   bottom: 0;
-  transition: transform var(--animation-speed) ease-in-out;
+  transition: opacity 500ms ease-in-out;
   z-index: 0;
 }
 
 .previous {
-  transform: translateX(-100%);
+  opacity: 0;
 }
 
 .hidden {
@@ -38,5 +38,5 @@
 }
 
 .next {
-  transform: translateX(100%);
+  opacity: 0;
 }
