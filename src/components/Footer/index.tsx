@@ -7,12 +7,12 @@ interface FooterProps {
 
 const Footer = ({ className = '' }: FooterProps) => {
   return (
-    <div
+    <footer
       className={`${styles.footer} d-flex flex-col justify-content-center align-items-center ${className}`}
     >
       <KasaLogo className={`${styles.logo} small`} />
       <p className={styles.copyright}>© 2020 Kasa. All rights reserved</p>
-    </div>
+    </footer>
   );
 };
 
