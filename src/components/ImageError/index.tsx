@@ -1,4 +1,4 @@
-import { BrokenRobot } from '@/components/Icons';
+import { BrokenRobot } from '@/components/icons';
 import { CSSProperties } from 'react';
 import styles from './styles.module.scss';
 

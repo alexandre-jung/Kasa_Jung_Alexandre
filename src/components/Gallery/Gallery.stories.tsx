@@ -1,25 +1,25 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import GridComponent from '@components/Grid';
+import GalleryComponent from '@components/Gallery';
 import Thumbnail from '@components/Thumbnail';
 import lodges from '@mock/logements.json';
 import { titleDecorator } from '@storybook/utils';
 
 export default {
-  title: 'components/Grid',
-  component: GridComponent,
+  title: 'components/Gallery',
+  component: GalleryComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'padded',
   },
-  decorators: [titleDecorator('Resize your window to view the grid behavior')],
-} as ComponentMeta<typeof GridComponent>;
+  decorators: [titleDecorator('Resize your window to view the gallery behavior')],
+} as ComponentMeta<typeof GalleryComponent>;
 
-const Template: ComponentStory<typeof GridComponent> = (args) => (
-  <GridComponent {...args} />
+const Template: ComponentStory<typeof GalleryComponent> = (args) => (
+  <GalleryComponent {...args} />
 );
 
-export const Grid = Template.bind({});
-Grid.args = {
+export const Gallery = Template.bind({});
+Gallery.args = {
   children: (
     <>
       {lodges.map((lodge) => (

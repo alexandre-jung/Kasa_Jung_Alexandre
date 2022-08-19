@@ -1,7 +1,7 @@
 import routes from '@routes';
+import { KasaLogo } from '@/components/icons';
 import NavLink from '@components/NavLink';
 import Link from '@components/Link';
-import Logo from '@components/Logo';
 import styles from './styles.module.scss';
 
 interface HeaderProps {
@@ -14,7 +14,7 @@ const Header = ({ className = '' }: HeaderProps) => {
       className={`${styles.header} d-flex justify-content-between align-items-center ${className}`}
     >
       <Link to={routes.home()}>
-        <Logo className={styles.logo} />
+        <KasaLogo className={styles.logo} />
       </Link>
       <ul className={`list-unstyled d-flex ${styles.menu}`}>
         <NavLink to={routes.home()}>Accueil</NavLink>

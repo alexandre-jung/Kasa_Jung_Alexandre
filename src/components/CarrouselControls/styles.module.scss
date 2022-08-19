@@ -26,7 +26,10 @@
 }
 
 .icon {
+  @include color('white');
+
   height: 24px;
+
   @include breakpoint(desktop) {
     height: 80px;
 

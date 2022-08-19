@@ -3,9 +3,9 @@
 @use '@scss/mixins' as *;
 
 .link {
-  text-decoration: none;
   @include color(primary);
 
+  text-decoration: none;
   border-bottom: 2px solid transparent;
 
   &[class~='active'] {

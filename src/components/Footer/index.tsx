@@ -1,4 +1,4 @@
-import Logo from '@components/Logo';
+import { KasaLogo } from '@/components/icons';
 import styles from './styles.module.scss';
 
 interface FooterProps {
@@ -10,7 +10,7 @@ const Footer = ({ className = '' }: FooterProps) => {
     <div
       className={`${styles.footer} d-flex flex-col justify-content-center align-items-center ${className}`}
     >
-      <Logo className={`${styles.logo} text-white small`} />
+      <KasaLogo className={`${styles.logo} small`} />
       <p className={styles.copyright}>© 2020 Kasa. All rights reserved</p>
     </div>
   );

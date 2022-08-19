@@ -1,4 +1,4 @@
-import { LeftArrow, RightArrow, Play, Pause } from '@components/Icons';
+import { LeftArrow, RightArrow, Play, Pause } from '@/components/icons';
 import styles from './styles.module.scss';
 
 interface ControlsProps {
@@ -19,19 +19,19 @@ function Controls({
   return (
     <div className={`${className} ${styles.controls}`}>
       <button className={styles.button} onClick={() => onPrevious()}>
-        <LeftArrow height={80} className={`text-white ${styles.icon}`} />
+        <LeftArrow height={80} className={styles.icon} />
       </button>
       <button className={styles.button} onClick={() => onNext()}>
-        <RightArrow height={80} className={`text-white ${styles.icon}`} />
+        <RightArrow height={80} className={styles.icon} />
       </button>
       <button
         className={`${styles.button} ${styles['play-pause-button']}`}
         onClick={() => onPlayPause()}
       >
         {isPlaying ? (
-          <Pause height={40} className={`text-white ${styles.icon} small`} />
+          <Pause height={40} className={`${styles.icon} small`} />
         ) : (
-          <Play height={40} className={`text-white ${styles.icon} small`} />
+          <Play height={40} className={`${styles.icon} small`} />
         )}
       </button>
     </div>

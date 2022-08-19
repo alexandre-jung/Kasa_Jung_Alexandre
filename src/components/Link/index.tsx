@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link as RRLink, To } from 'react-router-dom';
+import { Link as ReactRouterLink, To } from 'react-router-dom';
 import styles from './styles.module.scss';
 
 interface LinkProps {
@@ -11,12 +11,12 @@ interface LinkProps {
 
 const Link = ({ to, children, hover, className }: LinkProps) => {
   return (
-    <RRLink
+    <ReactRouterLink
       to={to}
       className={`${styles.link} ${hover ? styles.underline : ''} ${className}`}
     >
       {children}
-    </RRLink>
+    </ReactRouterLink>
   );
 };
 

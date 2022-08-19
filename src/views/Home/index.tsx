@@ -1,4 +1,4 @@
-import Grid from '@components/Grid';
+import Grid from '@/components/Gallery';
 import Hero from '@components/Hero';
 import Link from '@components/Link';
 import Thumbnail from '@components/Thumbnail';
